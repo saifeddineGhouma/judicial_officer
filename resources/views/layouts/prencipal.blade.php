@@ -15,6 +15,7 @@
 
     <!-- Bootstrap Core Css -->
     <link href="{{asset('prencipal/plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('prencipal/plugins/sweetalert/sweetalert.css')}}" rel="stylesheet" />
 
     <!-- Waves Effect Css -->
     <link href="{{asset('prencipal/plugins/node-waves/waves.css')}}" rel="stylesheet" />
@@ -814,7 +815,7 @@
 
     <!-- Bootstrap Core Js -->
     <script src="{{asset('prencipal/plugins/bootstrap/js/bootstrap.js')}}"></script>
-
+          <script src="{{asset('js/swetalert.js')}}"></script>
     <!-- Select Plugin Js -->
     <script src="{{asset('prencipal/plugins/bootstrap-select/js/bootstrap-select.js')}}"></script>
 
@@ -839,13 +840,22 @@
 
 
     <!-- Sparkline Chart Plugin Js -->
-
+    <script src="{{asset('prencipal/plugins/jquery-datatable/jquery.dataTables.js')}}"></script>
+    <script src="{{asset('prencipal/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js')}}"></script>
     <!-- Custom Js -->
     <script src="{{asset('prencipal/js/admin.js')}}"></script>
-    <script src="{{asset('prencipal/js/pages/index.js')}}"></script>
+  
 
     <!-- Demo Js -->
     <script src="{{asset('prencipal/js/demo.js')}}"></script>
+    <script src="{{asset('prencipal/plugins/jquery-validation/jquery.validate.js')}}"></script>
+    <script src="{{asset('prencipal/plugins/jquery-steps/jquery.steps.js')}}"></script>
+    <script src="{{asset('prencipal/plugins/sweetalert/sweetalert.min.js')}}"></script>
+
+    <script src="{{asset('prencipal/js/pages/forms/form-validation.js')}}"></script>
+
+
+
 </body>
 
 </html>
