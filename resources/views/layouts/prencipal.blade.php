@@ -12,7 +12,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-
+     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.css
+">
     <!-- Bootstrap Core Css -->
     <link href="{{asset('prencipal/plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{asset('prencipal/plugins/sweetalert/sweetalert.css')}}" rel="stylesheet" />
@@ -844,7 +845,9 @@
     <script src="{{asset('prencipal/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js')}}"></script>
     <!-- Custom Js -->
     <script src="{{asset('prencipal/js/admin.js')}}"></script>
-  
+    <script src="{{asset('prencipal/js/pages/forms/form-wizard.js')}}"></script>
+
+    <script src="{{asset('prencipal/js/pages/examples/profile.js')}}"></script>
 
     <!-- Demo Js -->
     <script src="{{asset('prencipal/js/demo.js')}}"></script>

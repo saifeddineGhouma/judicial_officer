@@ -24,21 +24,15 @@
                         </div>
                         <div class="body">
                             <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="{{asset('prencipal/images/image-gallery/1.jpg')}}" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="{{asset('prencipal/images/image-gallery/thumb/thumb-1.jpg')}}">
+                                @foreach($files as $file)
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <a href="{{asset('files/ghouma/'.$file->file)}}" data-sub-html="Demo Description">
+                                        <img class="img-responsive thumbnail" src="{{asset('files/ghouma/'.$file->file)}}">
                                     </a>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="{{asset('prencipal/images/image-gallery/2.jpg')}}" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="{{asset('prencipal/images/image-gallery/thumb/thumb-2.jpg')}}">
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="{{asset('prencipal/images/image-gallery/3.jpg')}}" data-sub-html="Demo Description">
-                                        <img class="img-responsive thumbnail" src="{{asset('prencipal/images/image-gallery/thumb/thumb-3.jpg')}}">
-                                    </a>
-                                </div>
+
+                                @endforeach
+                           
                                
                                
                                

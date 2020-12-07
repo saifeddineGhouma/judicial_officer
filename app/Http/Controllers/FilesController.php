@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Dossier;
+use App\File;
 use Illuminate\Http\Request;
 
 class FilesController extends Controller
 {
-    public function index()
+    public function index(Dossier $dossier)
     {
-        return view('files.index');
+
+        $files = $dossier->files;
+        return view('files.index',compact('files'));
     }
 }

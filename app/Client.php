@@ -9,6 +9,12 @@ class Client extends Model
     protected $table = 'clients';
 
     protected $fillable = [
-        'name', 'adress', 'email','tel', 'domaine'
+        'name', 'adress', 'tel', 'domaine'
     ];
+
+    public function dossiers()
+    {
+        return $this->hasMany('App\Dossier');
+ 
+    }
 }

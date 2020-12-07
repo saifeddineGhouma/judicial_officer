@@ -17,7 +17,12 @@
                                     <td>{{$client->adress}}</td>
                                     <td>{{$client->tel}}</td>
                                     <td>{{$client->domaine}}</td>
-                                    <td></td>
+                                    <td>
+                                      <a href="{{route('clients.show',$client->id)}}">
+                                         <i class="material-icons">fullscreen</i> 
+                                      </a>
+                                           
+                                    </td>
                                   </tr> 
 
                               @endforeach
