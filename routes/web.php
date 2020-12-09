@@ -29,6 +29,11 @@ Route::get('/clients/show/{id}','ClientsController@show')->name('clients.show');
 /*****dossiers */
 
 Route::get('dossiers/{id}/create','DossierController@create')->name('dossier.create') ;
+Route::get('dossiers','DossierController@index')->name('dossiers.index') ;
+
 Route::post('dossiers/store','DossierController@store')->name('dossier.store') ;
 
-
+/**files */
+Route::get('images','FilesController@getAll')->name('files.getall') ;
+/**factures  */
+Route::get('factures','FacturesController@index')->name('factures.index') ;

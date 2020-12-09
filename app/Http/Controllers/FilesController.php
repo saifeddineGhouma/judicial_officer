@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class FilesController extends Controller
 {
+
+    public function getAll()
+    {
+        $files = File::all();
+        return view('files.indexAll',compact('files'));
+    }
     public function index(Dossier $dossier)
     {
 
